@@ -35,7 +35,7 @@ body{
 }
 
 #pTitle{
-    font-size: 4.2rem;
+    font-size: 3.6rem;
     font-weight: 600;
     margin-top: 12vh;
     margin-bottom: 1.5vh;
@@ -86,6 +86,7 @@ body{
     outline: 1px solid #79747E;
     border-radius: 4px;
     padding: 0 2% 0 2%;
+    font-size: 0.8rem;
 }
 #divIdPw input:focus{
     outline: 1.5px solid black;
@@ -107,13 +108,13 @@ body{
 #divSocialLogin{
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 30%;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 3vh;
 }
 #divSocialLogin > img{
-    height: 7vh;
+    height: 5vh;
 }
 
 #btnLoginOrSignup{
