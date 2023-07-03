@@ -16,16 +16,21 @@ a{
 body{
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 #sec1{
     display: flex;
     flex-direction: column;
-    background-color: #FAFAFA;
+    background-color: #F8F8F8;
 }
 
 #divSearch{
+    position: relative;
     display: flex;
+    width: 40vw;
+    align-self: center;
     justify-content: center;
     align-items: center;
     margin: 2.5vh;
@@ -39,10 +44,16 @@ body{
 }:focus{
     outline: none;
 }
+#divSearch > img{
+    position: absolute;
+    width: 24px;
+    right: 1.1vw;
+}
 
 
 .cWidth{
     width: 65vw;
+    min-width: 650px;
     align-self: center;
 }
 
@@ -66,6 +77,7 @@ body{
     font-weight: 700;
     line-height: 6vh;
     text-align: center;
+    word-break: keep-all;
 }
 
 #sec2{
@@ -74,9 +86,16 @@ body{
     padding-bottom: 8vh;
 }
 
+#pMore{
+    color: #838282;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 #divBooksH{
     display: flex;
     flex-direction: row;
+    position: relative;
     width: 60vw;
     margin: 0 auto;
     justify-content: space-between;
@@ -86,7 +105,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 14vw;
-    height: 33vh;
+    height: 35vh;
     border-radius: 12px;
     background: rgba(255, 251, 251, 0.20);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -143,6 +162,7 @@ body{
     width: 60vw;
     margin: 0 auto;
     justify-content: space-between;
+    margin-bottom: 10vh;
 }
 #divBooksV > .divOneBook{
     display: flex;
@@ -152,27 +172,63 @@ body{
     border-radius: 24px;
     background: rgba(255, 251, 251, 0.20);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2vh;
 }
 #divBooksV > .divOneBook > img{
     width: 13vw;
     border-radius: 12px;
 }
 #divBooksV > .divOneBook > div{
-    margin-top: 1.2vh;
-    padding: 0 10px 0 10px;
+    padding: 0 3vw 0vw 3vw;
 }
-#divBooksV > .divOneBook #title{
-    font-size: 1rem;
-    font-weight: 700;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break:break-all;
-}
-#divBooksV > .divOneBook #divPlaceDate{
+
+#divIdDate{
     display: flex;
     flex-direction: row;
+    align-items: end;
+    margin-top: 1.9vh;
+    margin-bottom: 2.2vh;
 }
-#divPlaceDate #date{
-    margin-left: 5px;
+#divIdDate > #id{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+#divIdDate > #date{
+    font-size: 1.2rem;
+    color: #A5A5A5;
+    font-weight: 500;
+}
+#divBooksV > .divOneBook #title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.6vh;
+}
+#divBooksV > .divOneBook #content{
+    width: 370px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.2vh
+}
+
+#divLikeReply{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#divLikeReply > div{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+#divLikeReply img{
+    width: 16px;
+    margin-right: 3px;
+}
+#divLikeReply{
+    font-size: 1rem;
+}
+#divLikeReply strong{
+    font-size: 1.2rem;
+    margin-left: 3.5px;
+    margin-right: 20px;
 }

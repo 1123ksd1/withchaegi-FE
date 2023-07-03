@@ -10,6 +10,7 @@
     <section id="sec1">
         <div id="divSearch">
             <input placeholder="검색어를 입력하세요">
+            <img src="/assets/img/searchBtn.png" alt="검색 버튼">
         </div>
         <div class="cWidth" id="divBanner">
             <p>간단한 테스트 후<br>나에게 맞는 독서모임 추천</p>
@@ -18,7 +19,10 @@
         </div>
     </section>
     <section id="sec2" class="cWidth">
-        <p style="font-weight: 700; font-size: 2.4rem; margin-top: 5vh; margin-bottom: 2vh;">내 주변 근처에서 독서친구를 만나보러 가요</p>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: baseline; margin-bottom: 3vh;">
+            <p style="font-weight: 700; font-size: 2.4rem; margin-top: 5vh;">내 주변 근처에서 독서친구를 만나보러 가요</p>
+            <p id="pMore">더보기</p>
+        </div>
         <div id="divBooksH">
             <div class="divOneBook">
                 <img src="/assets/img/book.png" alt="">
@@ -64,21 +68,89 @@
                     <p id="info">첫 모임 5/18(목) 18:00</p>
                 </div>
             </div>
+            <img style="width: 60px; position: absolute; top: 12vh; right: -2vw;" src="/assets/img/arrow_right.svg" alt="오른쪽 화살표">
         </div>
     </section>
     <section id="sec3">
         <div class="cWidth">
-            <p style="font-weight: 700; font-size: 2.4rem; margin-top: 5vh; margin-bottom: 2vh;">현재 인기 있는 게시글</p>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: baseline; margin-bottom: 3vh;">
+                <p style="font-weight: 700; font-size: 2.4rem; margin-top: 5vh;">현재 인기 있는 게시글</p>
+                <p id="pMore">더보기</p>
+            </div>
             <div id="divBooksV">
                 <div class="divOneBook">
                     <img src="/assets/img/book.png" alt="">
                     <div>
-                        <p id="title">범죄학 연구자와 함께 콘텐츠 사회 문제 짚어보기</p>
-                        <div id="divPlaceDate">
-                            <div id="place">강남</div>
-                            <div id="date">5/18</div>
+                        <div id="divIdDate">
+                            <div id="id">소독이</div>
+                            <div id="date">2023.05.18</div>
                         </div>
-                        <p id="info">첫 모임 5/18(목) 18:00</p>
+                        <p id="title">2023 끄적임_도서 원작 드라마 파친코 후기</p>
+                        <div id="content">
+                            파친코를 읽었는데 너무너무 재밌었어요ㅜㅠㅜㅠㅜㅠㅠ 눈물 파티 내가 만약에 일정감정기에 태어났으면 어땠을까...
+                        </div>
+                        <div id="divLikeReply">
+                            <div>
+                                <img src="/assets/img/like.svg" alt="좋아요 이미지">
+                                <p>좋아요</p>
+                                <strong>177</strong>
+                            </div>
+                            <div>
+                                <img src="/assets/img/reply.svg" alt="댓글 이미지">
+                                <p>댓글</p>
+                                <strong>23</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divOneBook">
+                    <img src="/assets/img/book.png" alt="">
+                    <div>
+                        <div id="divIdDate">
+                            <div id="id">소독이</div>
+                            <div id="date">2023.05.18</div>
+                        </div>
+                        <p id="title">2023 끄적임_도서 원작 드라마 파친코 후기</p>
+                        <div id="content">
+                            파친코를 읽었는데 너무너무 재밌었어요ㅜㅠㅜㅠㅜㅠㅠ 눈물 파티 내가 만약에 일정감정기에 태어났으면 어땠을까...
+                        </div>
+                        <div id="divLikeReply">
+                            <div>
+                                <img src="/assets/img/like.svg" alt="좋아요 이미지">
+                                <p>좋아요</p>
+                                <strong>177</strong>
+                            </div>
+                            <div>
+                                <img src="/assets/img/reply.svg" alt="댓글 이미지">
+                                <p>댓글</p>
+                                <strong>23</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divOneBook">
+                    <img src="/assets/img/book.png" alt="">
+                    <div>
+                        <div id="divIdDate">
+                            <div id="id">소독이</div>
+                            <div id="date">2023.05.18</div>
+                        </div>
+                        <p id="title">2023 끄적임_도서 원작 드라마 파친코 후기</p>
+                        <div id="content">
+                            파친코를 읽었는데 너무너무 재밌었어요ㅜㅠㅜㅠㅜㅠㅠ 눈물 파티 내가 만약에 일정감정기에 태어났으면 어땠을까...
+                        </div>
+                        <div id="divLikeReply">
+                            <div>
+                                <img src="/assets/img/like.svg" alt="좋아요 이미지">
+                                <p>좋아요</p>
+                                <strong>177</strong>
+                            </div>
+                            <div>
+                                <img src="/assets/img/reply.svg" alt="댓글 이미지">
+                                <p>댓글</p>
+                                <strong>23</strong>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
