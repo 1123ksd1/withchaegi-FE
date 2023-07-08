@@ -5,7 +5,7 @@ html{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-div,p,input{
+div,p,input,img{
     margin: 0;
     padding: 0;
 }
@@ -36,9 +36,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15vh 0 18vh 0;
 }
 .divH{
-    width: 60vw;
+    width: 50vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,84 +47,124 @@ body{
 }
 
 .cClub1{
-    width: 24vw;
+    width: 20vw;
     border-radius: 24px;
     background: #FFF;
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
 }
 .cClub2{
-    width: 30vw;
+    width: 24vw;
     border-radius: 24px;
     background: #FFF;
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
-    padding: 2.5vh 2vw 2.5vh 2vw ;
+    padding: 6vh 2vw 5vh 2.5vw ;
 }
 
 #divClub1 > div > p{
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 500;
+    margin-bottom: 1.4vh;
 }
 #type > div{
     display: flex;
     flex-direction: row;
+    margin-bottom: 2.5vh;
 }
 #type > div > div{
-    width: 93px;
-    border: 2px solid #F88103;
+    width: 40px;
+    border: 1.5px solid #F88103;
     border-radius: 32px;
-    padding: 16px 24px;
-    font-size: 2.4rem;
-    font-weight: 500;
+    padding: 7px 11px;
+    font-size: 1.6rem;
     text-align: center;
+    margin-right: 12px;
 }
 
 #keyword > div{
     display: flex;
     flex-direction: row;
+    margin-bottom: 2.5vh;
 }
 #keyword > div > div{
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     color: #7E7E7E;
     font-weight: 400;
 }
 
 #title > div{
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     color: #7E7E7E;
     font-weight: 400;
+    margin-bottom: 2.5vh;
 }
 
 #author > div{
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     color: #7E7E7E;
     font-weight: 400;
+    margin-bottom: 2.5vh;
 }
 
 #divClub2{
-    width: 22vw;
+    width: 17vw;
     display: flex;
     flex-direction: column;
-    padding: 2.5vh 1vw 2.5vh 1vw;
+    padding: 6vh 1vw 1vh 2vw ;
 }
 #divClub2 > div{
     display: flex;
     flex-direction: row;
+    margin-bottom: 4vh;
 }
 #divClub2 > div > img {
-    width: 36px;
-    height: 36px;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
-.pBlack{
-    font-size: 2.4rem;
+.pBlack1{
+    font-size: 1.8rem;
     font-weight: 400;
+    line-height: 1.8rem;
+    margin-bottom: 1.5vh;
+}
+.pBlack2{
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 .pGray{
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #7E7E7E;
 }
 
+#divClub3 > div{
+    margin-top: 4vh;
+}
+
 .orangeBtn{
-    background-color: #F88103;
-    
+    width: 50vw;
+    height: 7vh;
+    border-radius: 12px;
+    background: #F88103;
+    line-height: 7vh;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1.8vh;
+}
+
+#div3Btn{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.emptyBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    border-radius: 12px;
+    border: 1px solid #F88103;
+    font-size: 1.6rem;
 }
