@@ -13,9 +13,9 @@
 <body>
     <div include-html="header.html"></div>
     <section id="sec1">
-        <div style="display: flex; flex-direction: row; align-items: baseline; border-bottom: 1px solid black; padding: 6px;">
+        <div style="display: flex; flex-direction: row; align-items: center; border-bottom: 1px solid black; padding: 6px;">
             <p style="font-size: 2.2rem;">범죄학 연구자와 함께 콘텐츠 사회문제 짚어보기</p>
-            <img style="width: 20px; height: 20px;" src="/assets/img/Close.png" alt="닫기">
+            <img onClick="location.href='main.html'" src="/assets/img/close.png" alt="닫기">
         </div>
     </section>
     <section id="sec2">
@@ -81,9 +81,9 @@
         </div>
         <div class="orangeBtn">현재 6명 자리 중에 3자리 밖에 안 남았어요</div>
         <div id="div3Btn">
-            <div id="likeBtn" style="width: 8%;" class="emptyBtn"><img id="likeImg" src="/assets/img/like-empty.svg" alt="좋아요"></div>
+            <div id="likeBtn" style="width: 8%;" class="emptyBtn"><img id="likeImg" src="/assets/img/likeEmpty.svg" alt="좋아요"></div>
             <div id="submit" style="width: 44%;" class="emptyBtn">신청하기</div>
-            <div style="width: 44%;" class="emptyBtn">다른 독서 모임 알아보러 가기</div>
+            <div id="back" style="width: 44%;" class="emptyBtn">다른 독서 모임 알아보러 가기</div>
         </div>
     </section>
     <div include-html="footer.html"></div>
@@ -99,7 +99,7 @@
             like_img.attr('src', '/assets/img/like.svg');
         }
         else{
-            like_img.attr('src', '/assets/img/like_empty.svg');
+            like_img.attr('src', '/assets/img/likeEmpty.svg');
         }
         
         $("#likeBtn").click(function(){
@@ -110,7 +110,7 @@
             }
             else{
                 like_status=false;
-                like_img.attr('src', '/assets/img/like_empty.svg');
+                like_img.attr('src', '/assets/img/likeEmpty.svg');
             }
         })
     </script>
