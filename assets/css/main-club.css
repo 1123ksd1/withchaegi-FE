@@ -99,8 +99,11 @@ body{
     border-radius: 12px;
 }
 #divBooksH > .divOneBook > div{
-    margin-top: 10px;
-    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 6px 10px 6px 10px;
 }
 #divBooksH > .divOneBook #title{
     font-size: 1rem;
@@ -109,12 +112,11 @@ body{
     text-overflow: ellipsis;
     white-space: nowrap;
     word-break:break-all;
+    margin-bottom: 10px;
 }
 #divBooksH > .divOneBook #divPlaceDate{
     display: flex;
     flex-direction: row;
-    margin-top: 5px;
-    margin-bottom: 3px;
 }
 #divPlaceDate #date{
     margin-left: 5px;
@@ -131,7 +133,6 @@ body{
     font-size: 0.8rem;
     font-weight: 500;
 }
-
 
 #sec2 #div1{
     display: flex;

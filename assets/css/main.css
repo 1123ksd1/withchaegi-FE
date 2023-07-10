@@ -120,12 +120,16 @@ body{
     border-radius: 12px;
 }
 #divBooksH > .divOneBook > div{
-    margin-top: 10px;
-    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 6px 10px 6px 10px;
 }
 #divBooksH > .divOneBook #title{
     font-size: 1rem;
     font-weight: 700;
+    margin-bottom: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -134,8 +138,6 @@ body{
 #divBooksH > .divOneBook #divPlaceDate{
     display: flex;
     flex-direction: row;
-    margin-top: 5px;
-    margin-bottom: 3px;
 }
 #divPlaceDate #date{
     margin-left: 5px;
@@ -184,11 +186,14 @@ body{
     margin-bottom: 2vh;
 }
 #divBooksV > .divOneBook > img{
-    width: 200px;
+    width: 14vw;
+    min-width: 200px;
     border-radius: 12px;
 }
 #divBooksV > .divOneBook > div{
-    padding: 0 3vw 0vw 3vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3vw 20px 3vw;
 }
 
 #divIdDate{
@@ -219,7 +224,7 @@ body{
 }
 #divBooksV > .divOneBook #content{
     min-width: 370px;
-    height: 32%;
+    flex-grow: 1;
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 10px;

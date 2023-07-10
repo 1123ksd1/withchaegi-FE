@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <script src="/assets/js/includeHTML.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div include-html="header.html"></div>
@@ -80,14 +81,38 @@
         </div>
         <div class="orangeBtn">현재 6명 자리 중에 3자리 밖에 안 남았어요</div>
         <div id="div3Btn">
-            <div style="width: 8%;" class="emptyBtn"><img src="/assets/img/like.svg" alt="좋아요"></div>
-            <div style="width: 44%;" class="emptyBtn">신청하기</div>
+            <div id="likeBtn" style="width: 8%;" class="emptyBtn"><img id="likeImg" src="/assets/img/like-empty.svg" alt="좋아요"></div>
+            <div id="submit" style="width: 44%;" class="emptyBtn">신청하기</div>
             <div style="width: 44%;" class="emptyBtn">다른 독서 모임 알아보러 가기</div>
         </div>
     </section>
     <div include-html="footer.html"></div>
     <script>
         includeHTML();
+
+        // 좋아요 버튼
+        var like_status = false;
+        let like_btn = $("#likeBtn");
+        let like_img = $("#likeImg");
+
+        if(like_status){
+            like_img.attr('src', '/assets/img/like.svg');
+        }
+        else{
+            like_img.attr('src', '/assets/img/like_empty.svg');
+        }
+        
+        $("#likeBtn").click(function(){
+            console.log('클릭')
+            if(!like_status){
+                like_status=true;
+                like_img.attr('src', '/assets/img/like.svg');
+            }
+            else{
+                like_status=false;
+                like_img.attr('src', '/assets/img/like_empty.svg');
+            }
+        })
     </script>
 </body>
 </html>
