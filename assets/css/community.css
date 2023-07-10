@@ -240,3 +240,10 @@ background: #ECECEC;
         display: flex;
     }
 
+
+
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
