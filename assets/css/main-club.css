@@ -3,6 +3,7 @@
 html{
     font-size:62.5%;
     font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
 }
 
 div,p,input{
@@ -49,6 +50,7 @@ body{
     border: 2px solid #2D4A91;
     border-radius: 22px;
     padding: 0 1vw 0 1vw;
+    font-size: 1.4rem;
 }:focus{
     outline: none;
 }
@@ -65,7 +67,7 @@ body{
     margin-top: 7vh;
     margin-bottom: 8vh;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     line-height: 6vh;
     text-align: center;
@@ -134,34 +136,70 @@ body{
 #sec2 #div1{
     display: flex;
     flex-direction: row;
-    width: 130px;
-    justify-content: space-between;
+    gap: 10px;
     margin-top: 10vh;
 }
-#sec2 #div1 > div{
+.radioForm input[type=radio] + label{
     width: 60px;
     height: 40px;
-    font-size: 1.4rem;
-    background-color: #F88103;
+    font-size: 1.6rem;
+    border: 1px solid #F88103;
+    background: #FFF;
     border-radius: 24px;
     text-align: center;
     line-height: 40px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.radioForm label{
+    display: block;
+}
+.radioForm input[type=radio] {
+    display: none;
+}
+/* Checked */
+.radioForm input[type=radio]:checked + label{
+    background: #F88103;
+    border-radius: 24px;
 }
 
 #sec2 #div2{
-    width: 300px;
-    justify-content: space-between;
+    gap: 10px;
     margin-top: 4vh;
     margin-bottom: 6vh;
 }
 #sec2 #div2 > div{
-    width: 50px;
-    height: 25px;
-    font-size: 1.2rem;
+    height: 35px;
+    font-size: 1.4rem;
+    background-color: #F88103;
+    border: 1px solid #F88103;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+#sec2 #div2 > div:active{
+    background-color: #F88103;
+}
+
+#sec2 #div2 > select{
+    height: 35px;
+    font-size: 1.4rem;
     background-color: #ffffff00;
     border: 1px solid #F88103;
     border-radius: 24px;
     text-align: center;
-    line-height: 25px;
-    padding: 2px;
+    line-height: 35px;
+    padding-left: 5px;
+    padding-right: 20px;
+    background: url('/assets/img/arrow_bottom.svg') calc(95% - 5px) no-repeat;
+    background-size: 10px;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
 }

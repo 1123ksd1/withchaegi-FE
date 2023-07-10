@@ -78,6 +78,7 @@ body{
     border: 2px solid #2D4A91;
     border-radius: 22px;
     padding: 0 1vw 0 1vw;
+    font-size: 1.4rem;
 }:focus{
     outline: none;
 }

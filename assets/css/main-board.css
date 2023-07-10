@@ -24,26 +24,39 @@ body{
 #sec1 .divCategory{
     display: flex;
     flex-direction: row;
-    margin-top: 5vh;
+    margin-top: 3vh;
+    gap: 10px;
 }
-#sec1 .divCategory > div{
-    width: 80px;
-    height: 40px;
+
+.radioForm input[type=radio] + label{
+    height: 35px;
+    padding: 0 16px 0 16px;
     font-size: 1.4rem;
-    background-color: #F88103;
+    border: 1px solid #F88103;
+    background: #FFF;
     border-radius: 24px;
     text-align: center;
-    line-height: 40px;
+    line-height: 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.radioForm label{
+    display: block;
+}
+.radioForm input[type=radio] {
+    display: none;
+}
+/* Checked */
+.radioForm input[type=radio]:checked + label{
+    background: #F88103;
+    border-radius: 24px;
 }
 
 #sec2{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url('/assets/img/background-main.svg');
-    background-repeat : no-repeat;
-    background-size : cover;
-    padding-top: 8vh;
+    margin-top: 12vh;
 }
 
 #divBooksV{
@@ -64,7 +77,7 @@ body{
     min-height: 210px;
     border-radius: 24px;
     background: rgba(255, 251, 251, 0.20);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
     margin-bottom: 2vh;
 }
 #divBooksV > .divOneBook > img{
