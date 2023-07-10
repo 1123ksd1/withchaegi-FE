@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>채기랑</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="/assets/css/offline-main.css">
-
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <script src="/assets/js/includeHTML.js"></script>
 </head>
 
 <body>
-    <div id="container">
-        <div id="top">
-            <div class="top-left">채기량</div>
-            <div class="top-right">
-                <div>마이 페이지</div>
-                <div>로그인</div>
-                <div>글 작성하기</div>
-            </div>
-        </div>
-        <div class="underline"></div>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">오프라인 독서 클럽</a>
-                    </li>
-                    <li>
-                        <a href="#">커뮤니티</a>
-                    </li>
-                    <li>
-                        <a href="#">독서습관 챌린지</a>
-                    </li>
-                    <li>
-                        <a href="#">개인 독서 일기</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <div include-html="header.html"></div>
         <div id="search-bar">
             <input type="text" placeholder="검색어를 입력하세요">
             <div id="search-icon"><i class="fas fa-search"></i></div>
@@ -171,16 +145,11 @@
                 <div class="textthree">첫 모임 5/18(목) 18:00</div>
             </div>
         </div>
-        <footer>
-            <div class="footer-t1">채기량</div>
-            <div class="footer-t2">회사소개 | 서비스 가이드 | 개인정보보호정책 | 이용약관</div>
-            <div class="footer-t3">
-                <a href="#"><img width="47" height="47" src="/assets/img/img/instagram.png"></a>
-                <a href="#"><img width="47" height="47" src="/assets/img/img/facebook.png"></a>
-                <a href="#"><img width="47" height="47" src="/assets/img/img/twitter.png"></a>
-            </div>
-        </footer>
+        
     </div>
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>
