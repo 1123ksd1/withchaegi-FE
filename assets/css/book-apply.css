@@ -26,13 +26,41 @@ input[type='number']::-webkit-outer-spin-button {
     -moz-appearance: none;
     appearance: none;
 }
+input[type='date']:valid {
+    color: #C2C2C2;
+}
+input[type='time']:valid {
+    color: #C2C2C2;
+}
+textarea{
+    flex-grow: 1;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    resize: none;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    color: black;
+    padding: 15px;
+    font-size: 1.6rem;
+}
+select{
+    color: #C2C2C2;
+    padding-left: 15px;
+    padding-right: 20px;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
 
 body{
     display: flex;
     flex-direction: column;
-    
     margin: 0;
     padding: 0;
+    font-size: 1.6rem;
 }
 
 
@@ -47,7 +75,7 @@ body{
     background-size : cover;
 }
 
-#title{
+#sec1 #title{
    color: #001853;
    font-size: 2.2rem;
    font-weight: 700;
@@ -57,7 +85,7 @@ body{
 #sec2{
     background-color: #FFF;
     align-items: flex-start;
-    width: 65vw;
+    width: 60vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -67,95 +95,124 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-bottom: 10vh;
+    margin-bottom: 7vh;
 }
 
-.boxs{
+.divLeft{
     width: 15vw;
     padding-right: 2vw;
     text-align: left;
     font-size: 1.5rem;
 }
-
-textarea{
+.divRight{
+    display: flex;
+    flex-direction: row;
     flex-grow: 1;
-    height: 13vh;
+}
+
+#title-box textarea::placeholder{
+    color: #C2C2C2;
+}
+
+
+.divSquare{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14vh;
+    height: 14vh;
     border-radius: 12px;
+    padding: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.20);
+}
+.divSquare > img{
+    height: 4vh;
+}
+
+.book-title input{
+    flex-grow: 1;
+    border-radius: 12px;
+    margin: 0;
     outline: none;
     border: none;
     resize: none;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    color: black;
+    padding: 15px;
+    font-size: 1.6rem;
+    border: 0;
+    -webkit-appearance : none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.book-title input::placeholder{
     color: #C2C2C2;
-    padding: 10px;
-    font-family: Noto Sans KR;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
 }
 
-#picture > #divH{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#clubtime .divRight{
+    gap: 10px;
 }
-
-#divH{
-    width: 8vw;
-    height: 8vw;
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
-}
-
-#divH img{
-   width: 3vw;
-}
-
-#book-title > textarea{
-
-}
-
-#clubtime > #divH{
-    display: flex;
-    flex-direction: row;
-}
-#clubtime > #divTime{
+#clubtime #time-box{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px;
+    align-items: stretch;
+    padding: 15px;
 }
-#divTime #round{
-    height: 20%;
+#clubtime #round{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 3vh;
+    font-size: 1.2rem;
 }
-#divTime #round input{
-    width: 24px;
-}
-#divTime input{
-    height: 20%;
-    border: 0;
-    border-radius: 5px;
+#clubtime #round > input{
+    width: 5vh;
+    height: 3vh;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 8px;
     background: #FFF;
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+#time-box > input{
+    height: 3vh;
+    border-radius: 8px;
+    background: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
+#time-box input::placeholder{
+    color: #C2C2C2;
+}
 
+#clubplace .divRight{
+    gap: 10px;
+}
+#clubplace select{
+    flex-grow: 1;
+    height: 5vh;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    border: 0;
+    background: url('/assets/img/arrow_bottom.svg') calc(95% - 5px) no-repeat;
+    background-size: 10px;
+}
 
+#discuss-box .divRight{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
-    #s3-btn-container{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-    
-
-
-  .radioDiscuss input[type=radio] + label{
-    height: 35px;
+.radioDiscuss input[type=radio] + label{
     padding: 0 16px 0 16px;
     font-size: 1.4rem;
     border: 1px solid #F88103;
@@ -165,7 +222,6 @@ textarea{
     line-height: 35px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    
 }
 .radioDiscuss label{
     display: block;
@@ -179,142 +235,54 @@ textarea{
     border-radius: 24px;
 }
 
-#clubplace{
+#keyword .divRight{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    
+    height: 5vh;
+}
+#keyword .divRight > div{
+    line-height: 5vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
 }
 
-#clubplace>#place{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    gap: 10px;
-    
-   
-    
-}
-
-
-
-select{   
-     background: url('/assets/img/arrow_bottom.svg') calc(95% - 5px) no-repeat;
-    background-size: 15px;
-    -o-appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    flex-grow: 1;
-    border-radius: 24px;
-    background-color: #FFF;
+#keyword .divRight input{
+    width: 12vw;
+    line-height: 5vh;
+    border-radius: 8px;
+    background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
     padding: 15px;
-    
-
 }
-
-#picture{
-    display: flex;
-    flex-direction: row;
-
-}
-
-
-
-
-
-
-#keyword{
-    display: flex;
-    flex-direction: row;
-}
-
-#keyword > #divK{
-    width: 80%;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-}
-
-#keyword > #divK > div{
-    width: 10%;
-    text-align: center;
-    line-height: 5vh;
-}
-
-#keyword >#divK> textarea{
-    width: 70%;
-    border-radius: 1vw;
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
-    outline: none;
-    border: none;
-    resize: none;
+#keyword .divRight input::placeholder{
     color: #C2C2C2;
-    text-align: center;
-    font-family: Noto Sans KR;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    
 }
 
-#detail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5vh 0 5vh 0;
-    margin-bottom: 10px;
+#detail .divRight{
+    height: 20vh;
 }
-
-#detail > textarea{
-    height: 50vh;
-    width: 130vh;
-    border-radius: 12px;
-    outline: none;
-    border: none;
-    resize: none;
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);\color: #C2C2C2;
+#detail textarea::placeholder{
     color: #C2C2C2;
-    font-family: Noto Sans;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 42px;
-    padding: 3vh 3vw 3vh 3vw;
-    line-height : 20px;     
-    
-  }
-
+}
 
 #sec3{
+    width: 20vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 10vh;
 }
 #sec3 > div{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 130px;
+    justify-content: space-between;
+    color: white;
 }
-
-#cbtn1{
-border-radius: 1vh;
-background: #001853;
-color: #FFF;
-text-align: center;
-font-size: 1.4rem;
-padding: 1vh 0;
-display: flex;
-padding: 16px 24px;
-align-items: flex-start;
-gap: 10px;
+#sec3 > div > div{
+    background-color: #001853;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px 18px;
 }
