@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto&display=swap');
+
+html{
+    font-size:62.5%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+div,p,input,img{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+#sec1{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/img/background-main-detail.png');
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+
+#title{
+   color: #001853;
+   font-size: 2.2rem;
+
+}
+
+#sec2{
+    background-color: #f88103;
+    align-items: flex-start;
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#sec2>div{
+    width: 100%;
+}
+
+#comment-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.boxs{
+    width: 20%;
+    padding-right: 2vw;
+    text-align: left;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#comment-box > textarea{
+    width: 80%;
+    height: 13vh;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    resize: none;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+  }
+
+#clubplace{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+#clubplace>#place{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 10px;
+    
+}
+
+select{   
+     background: url('/assets/img/arrow_bottom.svg') calc(95% - 5px) no-repeat;
+    background-size: 15px;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    flex-grow: 1
+
+
+}
+
+#picture{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#divH{
+    border-radius: 1vh;
+    height: 8vw;
+    width: 8vw;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+#divH img{
+   width: 3vw;
+   
+}
+  #book-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vh 0 5vh 0;
+}
+
+#book-title > textarea{
+    height: 6vh;
+    width: 80%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    resize: none;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+  }
+
+  #clubtime{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+#s3-btn-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.s3-btn {
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 32px;
+    border: 1px solid #f88103;
+    background-color: white;
+  }
+
+#keyword{
+    display: flex;
+    flex-direction: row;
+}
+
+#keyword > #divK{
+    width: 80%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#keyword > #divK > div{
+    width: 10%;
+    text-align: center;
+    line-height: 5vh;
+}
+
+#keyword >#divK> textarea{
+    width: 80%;
+    border-radius: 1vw;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    outline: none;
+    border: none;
+    resize: none;
+
+    
+}
+
+#detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vh 0 5vh 0;
+}
+
+#detail > textarea{
+    height: 50vh;
+    width: 80vh;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    resize: none;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+   
+  }
+#sec3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+#cbtn1{
+border-radius: 1vh;
+background: #001853;
+color: #FFF;
+text-align: center;
+font-size: 1.4rem;
+padding: 1vh 0;
+
+}
