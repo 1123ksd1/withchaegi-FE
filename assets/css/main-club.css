@@ -72,6 +72,11 @@ body{
     line-height: 6vh;
     text-align: center;
     word-break: keep-all;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+#divBanner > div:hover{
+    background-color: #d56e01;
 }
 
 #divBooksH{
