@@ -104,19 +104,43 @@ body{
     transform: translateY(3px);
 }
 
-
-#divBooksH > .divOneBook > img{
+#divBooksH > .divOneBook.default #rank{
+    display: none;
+}
+#divBooksH > .divOneBook.popular #rank{
+    display: block;
+}
+  
+#divBooksH > .divOneBook > #divBookMap1{
+    display: flex;
+    position: relative;
     height: 16vw;
     min-height: 210px;
     border-radius: 12px;
+    overflow: hidden;
 }
-#divBooksH > .divOneBook > div{
+#divBooksH > .divOneBook > #divBookMap1 #like{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+#divBooksH > .divOneBook > #divBookMap1 #rank{
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+    font-size: 5.5rem;
+    color: white;
+    font-weight: 800;
+    -webkit-text-stroke: 3px #F88103;
+}
+#divBooksH > .divOneBook > #divBookMap2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-grow: 1;
     padding: 6px 10px 6px 10px;
 }
+
 #divBooksH > .divOneBook #title{
     font-size: 1rem;
     font-weight: 700;
@@ -144,6 +168,13 @@ body{
 #divBooksH > .divOneBook #info{
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+#sec2{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 10vh;
 }
 
 #sec2 #div1{
