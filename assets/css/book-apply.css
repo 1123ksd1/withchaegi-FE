@@ -5,12 +5,26 @@ html{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-div,p,input,img{
+div,p,img{
     margin: 0;
     padding: 0;
 }
 a{
     text-decoration: none;
+}
+input{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-appearance : none;
+    -moz-appearance:none;
+    appearance:none;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 body{
@@ -36,39 +50,35 @@ body{
 #title{
    color: #001853;
    font-size: 2.2rem;
+   font-weight: 700;
 
 }
 
 #sec2{
-    background-color: #f88103;
+    background-color: #FFF;
     align-items: flex-start;
-    width: 70vw;
+    width: 65vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
 }
 
-#sec2>div{
-    width: 100%;
-}
-
-#comment-box{
+#sec2 > div{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    width: 100%;
+    margin-bottom: 10vh;
 }
+
 .boxs{
-    width: 20%;
+    width: 15vw;
     padding-right: 2vw;
     text-align: left;
     font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
 }
 
-#comment-box > textarea{
-    width: 80%;
+textarea{
+    flex-grow: 1;
     height: 13vh;
     border-radius: 12px;
     outline: none;
@@ -76,12 +86,105 @@ body{
     resize: none;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
-  }
+    color: #C2C2C2;
+    padding: 10px;
+    font-family: Noto Sans KR;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#picture > #divH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divH{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+#divH img{
+   width: 3vw;
+}
+
+#book-title > textarea{
+
+}
+
+#clubtime > #divH{
+    display: flex;
+    flex-direction: row;
+}
+#clubtime > #divTime{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+#divTime #round{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+#divTime #round input{
+    width: 24px;
+}
+#divTime input{
+    height: 20%;
+    border: 0;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+
+
+    #s3-btn-container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+
+
+  .radioDiscuss input[type=radio] + label{
+    height: 35px;
+    padding: 0 16px 0 16px;
+    font-size: 1.4rem;
+    border: 1px solid #F88103;
+    background: #FFF;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    
+}
+.radioDiscuss label{
+    display: block;
+}
+.radioDiscuss input[type=radio] {
+    display: none;
+}
+/* Checked */
+.radioDiscuss input[type=radio]:checked + label{
+    background: #F88103;
+    border-radius: 24px;
+}
 
 #clubplace{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     
 }
 
@@ -91,7 +194,11 @@ body{
     width: 80%;
     gap: 10px;
     
+   
+    
 }
+
+
 
 select{   
      background: url('/assets/img/arrow_bottom.svg') calc(95% - 5px) no-repeat;
@@ -100,8 +207,13 @@ select{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    flex-grow: 1
-
+    border: none;
+    flex-grow: 1;
+    border-radius: 24px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    padding: 15px;
+    
 
 }
 
@@ -111,53 +223,10 @@ select{
 
 }
 
-#divH{
-    border-radius: 1vh;
-    height: 8vw;
-    width: 8vw;
-    background: #FFF;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
-}
 
-#divH img{
-   width: 3vw;
-   
-}
-  #book-title{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5vh 0 5vh 0;
-}
 
-#book-title > textarea{
-    height: 6vh;
-    width: 80%;
-    border-radius: 12px;
-    outline: none;
-    border: none;
-    resize: none;
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
-  }
 
-  #clubtime{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
 
-#s3-btn-container{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-.s3-btn {
-    padding: 1vh 1vw 1vh 1vw;
-    border-radius: 32px;
-    border: 1px solid #f88103;
-    background-color: white;
-  }
 
 #keyword{
     display: flex;
@@ -178,14 +247,20 @@ select{
 }
 
 #keyword >#divK> textarea{
-    width: 80%;
+    width: 70%;
     border-radius: 1vw;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
     outline: none;
     border: none;
     resize: none;
-
+    color: #C2C2C2;
+    text-align: center;
+    font-family: Noto Sans KR;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
     
 }
 
@@ -194,24 +269,41 @@ select{
     flex-direction: row;
     align-items: center;
     padding: 5vh 0 5vh 0;
+    margin-bottom: 10px;
 }
 
 #detail > textarea{
     height: 50vh;
-    width: 80vh;
+    width: 130vh;
     border-radius: 12px;
     outline: none;
     border: none;
     resize: none;
     background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
-   
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);\color: #C2C2C2;
+    color: #C2C2C2;
+    font-family: Noto Sans;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    padding: 3vh 3vw 3vh 3vw;
+    line-height : 20px;     
+    
   }
+
+
 #sec3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+#sec3 > div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 130px;
 }
 
 #cbtn1{
@@ -221,5 +313,8 @@ color: #FFF;
 text-align: center;
 font-size: 1.4rem;
 padding: 1vh 0;
-
+display: flex;
+padding: 16px 24px;
+align-items: flex-start;
+gap: 10px;
 }

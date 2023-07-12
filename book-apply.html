@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
     <link rel="stylesheet" href="/assets/css/book-apply.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
@@ -28,7 +28,6 @@
         <div class="boxs">사진첨부</div>
           <div id="divH">
              <img src="/assets/img/img3/camera.png" alt="camera">
-              <p class="score">0/1</p>
           </div>
       </div>
    
@@ -45,10 +44,32 @@
 
       <div id="clubtime">
         <div class="boxs">독서 클럽 일시</div>
-          <div id="divH"></div>
-          <div id="divH"></div>
+          <div id="divH"> 
+            <div id="divTime">
+            
+              <div id="round">
+                <input type="number">
+                <p>회차</p>
+              </div>
+              
+              <input type="date"
+                id="date"
+                max="2023.12.31"
+                min="2023.01.01"
+                value="0000.00.00">
 
-          
+              <input type="time"
+                id="time"
+                value="xxx"
+                min="yyy"
+                max="zzz">
+              
+            </div>
+          </div>
+
+          <div id="divH">
+            <img src="/assets/img/img2/+.png" alt="pluse">
+          </div>
         
       </div>
 
@@ -99,7 +120,7 @@
              <option>군포시</option>
            </select>
            <select>
-             <option value="none">읍/동/면</option>
+             <option value="none">동/읍/면</option>
              <option>별내면</option>
              <option>별내동</option>
              <option>진천읍</option>
@@ -120,16 +141,37 @@
         
       </div>
 
-      <div id="comment-box">
+      <div id="discuss-box">
         <div class="boxs">토론분야</div>
            <div id="s3-btn-container">
-                <div class="s3-btn" id="s3-btn1">소설/시</div>
-                <div class="s3-btn">인문</div>
-                <div class="s3-btn">사회</div>
-                <div class="s3-btn">역사</div>
-                <div class="s3-btn">예술</div>
-                <div class="s3-btn">과학</div>
-                <div class="s3-btn">경제 경영</div>
+              <div class="radioDiscuss">
+                <input type="radio" name="discuss" id="poemOption" value="poem" checked>
+                <label for="poemOption">소설/시</label>
+              </div>
+              <div class="radioDiscuss">
+                <input type="radio" name="discuss" id="humanOption" value="human" checked>
+                <label for="humanOption">인문</label>
+              </div>
+              <div class="radioDiscuss">
+                <input type="radio" name="discuss" id="societyOption" value="society" checked>
+                <label for="societyOption">사회</label>
+              </div>
+              <div class="radioDiscuss">
+                <input type="radio" name="discuss" id="historyOption" value="history" checked>
+                <label for="historyOption">역사</label>
+              </div>
+              <div class="radioDiscuss">
+                <input type="radio" name="discuss" id="artOption" value="art" checked>
+                <label for="artOption">예술</label>
+              </div>
+              <div class="radioDiscuss">
+                <input type="radio" name="discuss" id="scienceOption" value="science" checked>
+                <label for="scienceOption">과학</label>
+              </div>
+              <div class="radioDiscuss">
+                <input type="radio" name="discuss" id="economyOption" value="economy" checked>
+                <label for="economyOption">경제 경영</label>
+              </div>
         </div>
       </div>
 
@@ -160,8 +202,11 @@
     </section>
 
     <section id="sec3">
+      <div>
         <div id="cbtn1">업로드</div>
         <div id="cbtn1">나가기</div>
+      </div>
+
     </section>
 
     <script>
