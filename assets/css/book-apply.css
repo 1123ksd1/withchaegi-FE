@@ -89,6 +89,7 @@ body{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin-top: 10vh;
 }
 
 #sec2 > div{
@@ -102,7 +103,8 @@ body{
     width: 15vw;
     padding-right: 2vw;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    padding-top: 10px;
 }
 .divRight{
     display: flex;
@@ -271,7 +273,8 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 10vh;
+    margin-top: 3vh;
+    margin-bottom: 15vh;
 }
 #sec3 > div{
     width: 100%;
