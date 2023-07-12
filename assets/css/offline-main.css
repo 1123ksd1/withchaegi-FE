@@ -24,7 +24,9 @@ body{
 #sec1{
     display: flex;
     flex-direction: column;
-    background-image: url('/assets/img/background-main-club.svg');
+    background-image: url('/assets/img/backbround-offline-main.svg');
+    background-repeat : no-repeat;
+    background-size : cover;
 }
 
 #divSearch{
@@ -61,7 +63,6 @@ body{
 
 #divBanner{
     position: relative;
-    
 }
 #divBanner > p{
     font-size: 3rem;
@@ -85,7 +86,7 @@ body{
     transition: all 0.3s ease 0s;
 }
 #divBanner > div:hover{
-  background-color: #d56e01;
+  background-color: #da7203;
 }
 
 #sec2{
