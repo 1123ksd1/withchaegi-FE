@@ -3,7 +3,6 @@
 html{
     font-size:62.5%;
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500;
 }
 
 div,p,input{
@@ -22,9 +21,47 @@ body{
 }
 
 #sec1{
+    height: 48vh;
     display: flex;
+    position: relative;
     flex-direction: column;
     background-color: #F8F8F8;
+    background-image: url('/assets/img/background-comunity1.svg');
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+#sec1 #divSelectors{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-self: center;
+    gap: 20px;
+    bottom: -8vh;
+    width: 60vw;
+    min-width: 400px;
+    padding: 6vh 10vw 6vh 10vw;
+    border-radius: 24px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-size: 20px;
+}
+#divSelectors select{
+    flex-grow: 1;
+    height: 6vh;
+    border-radius: 12px;
+    border: 1px solid #000;
+    background: #FFF;
+    color: #525151;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    background: url('/assets/img/arrow_bottom.svg') calc(95% - 5px) no-repeat;
+    background-size: 15px;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
 }
 
 #divSearch{
@@ -59,9 +96,6 @@ body{
     align-self: center;
 }
 
-#divBanner{
-    position: relative;
-}
 #divBanner > p{
     font-size: 3rem;
     font-weight: 700;
@@ -75,7 +109,7 @@ body{
     margin-top: 7vh;
     margin-bottom: 8vh;
     border-radius: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 6vh;
     text-align: center;
@@ -88,9 +122,13 @@ body{
 }
 
 #sec2{
-    align-self: center;
-    padding-top: 10vh;
-    padding-bottom: 8vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    background-color: #F8F8F8;
 }
 
 #pMore{
@@ -100,142 +138,38 @@ body{
     cursor: pointer;
 }
 
-#divBooksH{
+.divBestOneBook{
     display: flex;
+    position: relative;
     flex-direction: row;
-    position: relative;
     width: 60vw;
-    gap: 1vw;
+    min-width: 600px;
+    height: 15vw;
+    min-height: 180px;
+    background-color: white; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    border-radius: 0;
     margin: 0 auto;
-}
-
-#divBooksH > .divOneBook{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 14vw;
-    height: 21vw;
-    min-width: 200px;
-    min-height: 280px;
-    border-radius: 12px;
-    background: rgba(255, 251, 251, 0.20);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 8px;
     cursor: pointer;
 }
-#divBooksH > .divOneBook.default #rank{
-    display: none;
-}
-#divBooksH > .divOneBook.popular #rank{
-    display: block;
-}
-  
-#divBooksH > .divOneBook > #divBookMap1{
-    display: flex;
-    position: relative;
-    height: 16vw;
-    min-height: 210px;
+.divBestOneBook > img{
+    width: 14vw;
+    min-width: 200px;
     border-radius: 12px;
-    overflow: hidden;
 }
-#divBooksH > .divOneBook > #divBookMap1 #like{
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-#divBooksH > .divOneBook > #divBookMap1 #rank{
-    position: absolute;
-    bottom: -5%;
-    left: 5%;
-    font-size: 5.5rem;
-    color: white;
-    font-weight: 800;
-    -webkit-text-stroke: 3px #F88103;
-}
-#divBooksH > .divOneBook > #divBookMap2{
+.divBestOneBook > div{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    flex-grow: 1;
-    padding: 6px 10px 6px 10px;
+    padding: 0 3vw 20px 3vw;
 }
 
-#divBooksH > .divOneBook #title{
-    font-size: 1rem;
-    font-weight: 700;
-    flex-grow: 0.5;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break:break-all;
-}
-#divBooksH > .divOneBook #divPlaceDate{
-    display: flex;
-    flex-direction: row;
-}
-#divPlaceDate #date{
-    margin-left: 5px;
-}
-#divPlaceDate > div{
-    background-color: #001853;
-    border-radius: 8px;
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 3px;
-}
-#divBooksH > .divOneBook #info{
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-.divOneBook {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: all 0.3s ease 0s;
-}
-.pHover{
-    display: none;
-}
-.divOneBook:hover .pHover{
-    display: block;
-    color: white;
-    font-size: 1.6rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-#divBooksH .divOneBook:before {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #F88103;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%) scale(0);
-    transition: all 0.5s ease 0s;
-}
-#divBooksH .divOneBook:hover > img, #divBooksH .divOneBook:hover > div{
-  transition: all 0.3s ease 0s;
-  opacity: 0.2;
-}
-#divBooksH .divOneBook:hover:before {
-  transform: translate(-50%, -50%) scale(5);
-  background: rgba(0, 0, 0, 0.8);
-}
 
 #sec3{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url('/assets/img/background-main.svg');
+    background-image: url('/assets/img/background-comunity2.svg');
     background-repeat : no-repeat;
     background-size : cover;
     padding-top: 8vh;
@@ -244,15 +178,14 @@ body{
 #divBooksV{
     display: flex;
     flex-direction: column;
-    width: 60vw;
-    margin: 0 auto;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 10vh;
 }
-#divBooksV > .divOneBook{
+.divOneBook{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 60vw;
     min-width: 600px;
     height: 16vw;
     min-height: 210px;
@@ -262,12 +195,12 @@ body{
     margin-bottom: 2vh;
     cursor: pointer;
 }
-#divBooksV > .divOneBook > img{
+.divOneBook > img{
     width: 14vw;
     min-width: 200px;
     border-radius: 12px;
 }
-#divBooksV > .divOneBook > div{
+.divOneBook > div{
     display: flex;
     flex-direction: column;
     padding: 0 3vw 20px 3vw;
@@ -290,7 +223,7 @@ body{
     font-weight: 500;
     margin-left: 5px;
 }
-#divBooksV > .divOneBook #title{
+#title{
     min-width: 370px;
     font-size: 2rem;
     font-weight: 700;
@@ -299,7 +232,7 @@ body{
     white-space: nowrap;
     word-break:break-all;
 }
-#divBooksV > .divOneBook #content{
+#content{
     min-width: 370px;
     flex-grow: 1;
     font-size: 1.2rem;
@@ -333,6 +266,26 @@ body{
     margin-right: 20px;
 }
 
+.divOneBook {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.pHover{
+    display: none;
+}
+.divOneBook:hover .pHover{
+    display: block;
+    color: white;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 #divBooksV .divOneBook:before {
     content: "";
     display: block;
@@ -347,7 +300,7 @@ body{
     transform: translate(-50%, -50%) scale(0);
     transition: all 0.5s ease 0s;
 }
-#divBooksV .divOneBook:hover > img, #divBooksV .divOneBook:hover >div{
+#divBooksV .divOneBook:hover > img, #divBooksV .divOneBook:hover > div{
     transition: all 0.3s ease 0s;
     opacity: 0.2;
 }

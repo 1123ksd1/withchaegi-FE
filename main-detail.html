@@ -83,7 +83,7 @@
         <div id="div3Btn">
             <div id="likeBtn" style="width: 8%;" class="emptyBtn"><img id="likeImg" src="/assets/img/likeEmpty.svg" alt="좋아요"></div>
             <div id="submit" style="width: 44%;" class="emptyBtn">신청하기</div>
-            <div id="back" style="width: 44%;" class="emptyBtn">다른 독서 모임 알아보러 가기</div>
+            <div id="back" style="width: 44%;" class="emptyBtn" onClick="location.href='main-club.html'">다른 독서 모임 알아보러 가기</div>
         </div>
     </section>
     <div include-html="footer.html"></div>
@@ -102,8 +102,7 @@
             like_img.attr('src', '/assets/img/likeEmpty.svg');
         }
         
-        $("#likeBtn").click(function(){
-            console.log('클릭')
+        like_btn.click(function(){
             if(!like_status){
                 like_status=true;
                 like_img.attr('src', '/assets/img/like.svg');
