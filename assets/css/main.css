@@ -110,6 +110,7 @@ body{
 #divBooksH > .divOneBook{
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 14vw;
     height: 21vw;
     min-width: 200px;
@@ -158,6 +159,49 @@ body{
 #divBooksH > .divOneBook #info{
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+.divOneBook {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.pHover{
+    display: none;
+}
+.divOneBook:hover .pHover{
+    display: block;
+    color: white;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#divBooksH .divOneBook:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F88103;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.5s ease 0s;
+}
+#divBooksH .divOneBook:hover > img, #divBooksH .divOneBook:hover >div{
+    transition: all 0.3s ease 0s;
+    opacity: 0.2;
+}
+#divBooksH .divOneBook:hover:before {
+    transform: translate(-50%, -50%) scale(5);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 #sec3{
@@ -259,4 +303,27 @@ body{
     font-size: 1.2rem;
     margin-left: 3.5px;
     margin-right: 20px;
+}
+
+#divBooksV .divOneBook:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #F88103;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.5s ease 0s;
+}
+#divBooksV .divOneBook:hover > img, #divBooksV .divOneBook:hover >div{
+    transition: all 0.3s ease 0s;
+    opacity: 0.2;
+}
+#divBooksV .divOneBook:hover:before {
+    transform: translate(-50%, -50%) scale(5);
+    background: rgba(0, 0, 0, 0.8);
 }

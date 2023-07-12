@@ -79,7 +79,19 @@ body{
     background: rgba(255, 251, 251, 0.20);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
     margin-bottom: 2vh;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
+#divBooksV > .divOneBook:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+#divBooksV > .divOneBook:active{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(4px);
+}
+
 #divBooksV > .divOneBook > img{
     width: 14vw;
     min-width: 200px;
@@ -160,7 +172,11 @@ body{
     border-radius: 24px; 
     padding: 4px 12px;
     font-size: 1.4rem;
+    cursor: pointer;
 }
 #divGoFillIn img{
     margin-right: 6px;
+}
+#divGoFillIn:hover{
+    background-color: #dedede;
 }
