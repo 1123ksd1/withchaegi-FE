@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto&display=swap');
+
+html{
+    font-size:62.5%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+div,p,img{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-appearance : none;
+    -moz-appearance:none;
+    appearance:none;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+#sec1{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/img/background-main-detail.png');
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+
+#title{
+   color: #001853;
+   font-size: 2.2rem;
+   font-weight: 700;
+
+}
+
+#sec2{
+    background-color: #FFF;
+    align-items: flex-start;
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#sec2 > div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+.boxs{
+    width: 15vw;
+    padding-right: 2vw;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+textarea{
+    flex-grow: 1;
+    height: 13vh;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    resize: none;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    color: #C2C2C2;
+    padding: 10px;
+    font-family: Noto Sans KR;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#picture > #divH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divH{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+#divH img{
+   width: 3vw;
+}
+
+#book-title > textarea{
+
+}
+
+#clubtime > #divH{
+    display: flex;
+    flex-direction: row;
+}
+#clubtime > #divTime{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+#divTime #round{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+#divTime #round input{
+    width: 24px;
+}
+#divTime input{
+    height: 20%;
+    border: 0;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+
+
+    #s3-btn-container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+
+
+  .radioDiscuss input[type=radio] + label{
+    height: 35px;
+    padding: 0 16px 0 16px;
+    font-size: 1.4rem;
+    border: 1px solid #F88103;
+    background: #FFF;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    
+}
+.radioDiscuss label{
+    display: block;
+}
+.radioDiscuss input[type=radio] {
+    display: none;
+}
+/* Checked */
+.radioDiscuss input[type=radio]:checked + label{
+    background: #F88103;
+    border-radius: 24px;
+}
+
+#clubplace{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+#clubplace>#place{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 10px;
+    
+   
+    
+}
+
+
+
+select{   
+     background: url('/assets/img/arrow_bottom.svg') calc(95% - 5px) no-repeat;
+    background-size: 15px;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    flex-grow: 1;
+    border-radius: 24px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    padding: 15px;
+    
+
+}
+
+#picture{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+
+
+
+#keyword{
+    display: flex;
+    flex-direction: row;
+}
+
+#keyword > #divK{
+    width: 80%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#keyword > #divK > div{
+    width: 10%;
+    text-align: center;
+    line-height: 5vh;
+}
+
+#keyword >#divK> textarea{
+    width: 70%;
+    border-radius: 1vw;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    outline: none;
+    border: none;
+    resize: none;
+    color: #C2C2C2;
+    text-align: center;
+    font-family: Noto Sans KR;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+
+#detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vh 0 5vh 0;
+    margin-bottom: 10px;
+}
+
+#detail > textarea{
+    height: 50vh;
+    width: 130vh;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    resize: none;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);\color: #C2C2C2;
+    color: #C2C2C2;
+    font-family: Noto Sans;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    padding: 3vh 3vw 3vh 3vw;
+    line-height : 20px;     
+    
+  }
+
+
+#sec3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+#sec3 > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 130px;
+}
+
+#cbtn1{
+border-radius: 1vh;
+background: #001853;
+color: #FFF;
+text-align: center;
+font-size: 1.4rem;
+padding: 1vh 0;
+display: flex;
+padding: 16px 24px;
+align-items: flex-start;
+gap: 10px;
+}
