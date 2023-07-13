@@ -71,9 +71,9 @@ body{
     font-weight: 700;
     line-height: 6vh;
     text-align: center;
-    word-break: keep-all;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    overflow: hidden;
 }
 #divBanner > div:hover{
     background-color: #da7203;
