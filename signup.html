@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>채기랑</title>
-    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/signup.css">
 </head>
 <body>
     <div style="position: absolute; left: 2%; margin-left: 2vw;" id="logo">
@@ -17,21 +17,33 @@
             <div><a href="#" onclick="location.href='login.html'"><div id="selectLogin">로그인</div></a></div>
             <div><div id="selectSignup">회원가입</div></div>
         </div>
-        <div id="divIdPw">
-            <div style="position: relative;">
-                <input id="iId" placeholder="이메일을 입력해주세요">
-                <p style="position: absolute; top: -12%; left:3%; font-size: 1rem; background-color: white;">&nbsp;ID&nbsp;</p>
+        <div id="divSignupInfo">
+            <div>
+                <div class="left">이름</div>
+                <div class="right">
+                    <input type="text"></input>
+                    <div>*150자 이하 문자, 숫자, @/./+/-/_ 만 가능합니다.</div>
+                </div>
             </div>
-            <div style="position: relative; margin-top: 0.9vh;">
-                <input id="iPw" placeholder="비밀번호를 입력해주세요">
-                <p style="position: absolute; top: -12%; left:3%; font-size: 1rem; background-color: white;">&nbsp;Password&nbsp;</p>
+            <div>
+                <div class="left">이메일</div>
+                <div class="right">
+                    <input type="email"></input>
+                </div>
             </div>
-        </div>
-        <div id="divSocialLogin">
-            <img src="/assets/img/google.svg" alt="구글 로그인 버튼">
-            <img src="/assets/img/naver.svg" alt="네이버 로그인 버튼">
-            <img src="/assets/img/facebook.svg" alt="페이스북 로그인 버튼">
-            <img src="/assets/img/kakao.svg" alt="카톡 로그인 버튼">
+            <div>
+                <div class="left">비밀번호</div>
+                <div class="right">
+                    <input type="password"></input>
+                    <div>*최소 8자 이상<br>*숫자로만 이루어진 비밀번호는 사용할 수 없습니다.(영어+숫자, 영어+부호 영어만 가능)</div>
+                </div>
+            </div>
+            <div>
+                <div class="left">비밀번호 확인</div>
+                <div class="right">
+                    <input type="password"></input>
+                </div>
+            </div>
         </div>
         <div id="btnLoginOrSignup"></div>
     </div>
